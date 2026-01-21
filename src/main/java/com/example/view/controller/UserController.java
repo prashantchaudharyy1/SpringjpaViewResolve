@@ -1,0 +1,18 @@
+package com.example.view.controller;
+
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class UserController {
+
+  
+    
+  @GetMapping("/")
+  public String getHome()
+  {
+	  System.out.println("UserController");
+	  return "index";
+  }
+}
